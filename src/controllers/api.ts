@@ -19,8 +19,11 @@ export let getWebhook = (req: Request, res: Response) => {
   
 // Parse the query params
 let mode = req.query['hub.mode'];
+console.log(' hub.mode = ' + mode);
 let token = req.query['hub.verify_token'];
+console.log('hub.verify_token = ' + token);
 let challenge = req.query['hub.challenge'];
+console.log('hub.challenge = ' + challenge);
   
 // Checks if a token and mode is in the query string of the request
 if (mode && token) {
