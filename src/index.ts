@@ -30,6 +30,8 @@ app.set("port", appPort);
 app.use(morgan('dev')); // log requests to the console  
 
 app.get("/api/user/", apiController.sample);
+app.post("/webhook/", apiController.postWebhook);
+app.get("/webhook/", apiController.getWebhook);
 
 mongoose.connect(connectionString);
 
