@@ -15,7 +15,7 @@ export let getWebhook = (req: Request, res: Response) => {
     console.log('Calling getWebhook');
     
       // Your verify token. Should be a random string.
-  let VERIFY_TOKEN = "<YOUR_VERIFY_TOKEN>"
+  let VERIFY_TOKEN = "halehan"
   
 // Parse the query params
 let mode = req.query['hub.mode'];
