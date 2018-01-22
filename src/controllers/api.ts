@@ -15,7 +15,7 @@ export let getWebhook = (req: Request, res: Response) => {
     console.log('Calling getWebhook');
     
       // Your verify token. Should be a random string.
-  let VERIFY_TOKEN = "halehan"
+  let VERIFY_TOKEN = "halehan";
   
 // Parse the query params
 let mode = req.query['hub.mode'];
@@ -40,6 +40,7 @@ if (mode && token) {
 }
 
 export let postWebhook = (req: Request, res: Response) => {
+    console.log('Calling postWebhook');
     let body = req.body;
     
       // Checks this is an event from a page subscription
