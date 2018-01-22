@@ -12,6 +12,7 @@ export let sample = (req: Request, res: Response) => {
 
 // Adds support for GET requests to our webhook
 export let getWebhook = (req: Request, res: Response) => { 
+    console.log('Calling getWebhook');
     
       // Your verify token. Should be a random string.
   let VERIFY_TOKEN = "<YOUR_VERIFY_TOKEN>"
