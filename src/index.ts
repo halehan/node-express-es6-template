@@ -32,7 +32,7 @@ app.use(morgan('dev')); // log requests to the console
 app.get("/", apiController.hiChatbot);
 app.post("/", apiController.postSample);
 
-// app.post("/webhook", apiController.postWebhook);
+app.post("/webhook/", apiController.postWebhook);
 app.get("/webhook/", apiController.getWebhook);
 
 mongoose.connect(connectionString);
