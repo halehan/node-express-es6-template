@@ -5,10 +5,17 @@ import { Response, Request, NextFunction } from 'express';
 import * as jwt from 'jsonwebtoken';
 import * as moment from 'moment';
 
+export let hiChatbot = (req: Request, res: Response) => {
+  res.json('Hi Im a chatbot');	
+} 
 
 export let sample = (req: Request, res: Response) => {
    res.json({ message: 'API Function Works' });	
 }  
+
+export let postSample = (req: Request, res: Response) => {
+    res.json({ message: 'Post' });	
+ }
 
 // Adds support for GET requests to our webhook
 export let getWebhook = (req: Request, res: Response) => { 
