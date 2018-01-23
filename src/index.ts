@@ -30,8 +30,8 @@ app.set("port", appPort);
 app.use(morgan('dev')); // log requests to the console  
 
 app.get("/", apiController.hiChatbot);
-app.get("/api/user/", apiController.sample);
-app.post("/api/user/", apiController.sample);
+app.post("/", apiController.postSample);
+
 // app.post("/webhook", apiController.postWebhook);
 app.get("/webhook", apiController.getWebhook);
 
