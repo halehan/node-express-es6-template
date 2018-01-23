@@ -33,7 +33,7 @@ app.get("/", apiController.hiChatbot);
 app.post("/", apiController.postSample);
 
 // app.post("/webhook", apiController.postWebhook);
-app.get("/webhook", apiController.getWebhook);
+app.get("/webhook/", apiController.getWebhook);
 
 mongoose.connect(connectionString);
 
